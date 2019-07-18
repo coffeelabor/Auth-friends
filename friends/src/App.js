@@ -22,6 +22,7 @@ function App() {
             return <Redirect to="/" />;
           }
           return <People {...props} />;
+          //<PrivateRoute exact path -" protected/people"
         }}
       />
     </div>
