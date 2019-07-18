@@ -33,7 +33,7 @@ export default withFormik({
       .then(res => {
         console.log("Res", res);
         localStorage.setItem("token", res.data.payload);
-        // formikBag.props.history.push("/profile")
+        formikBag.props.history.push("/people");
       })
       .catch(err => {
         console.log(err);
